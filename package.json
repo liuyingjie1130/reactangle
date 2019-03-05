@@ -22,5 +22,7 @@
     "grunt-contrib-csslint": "^2.0.0",
     "grunt-eslint": "^21.0.0",
     "grunt-htmlhint": "^0.9.13"
-  }
+  },
+  "dependencies": {},
+  "keywords": []
 }
