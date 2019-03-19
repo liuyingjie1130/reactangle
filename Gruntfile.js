@@ -26,6 +26,17 @@ module.exports = function (grunt) {
          },
          src: ['*.html']
                         
+    
+    },
+    mocha: {
+    test: {
+            src: ['test/index.html'],
+                  
+    },
+    options: {
+            run: true,
+                    reporter: 'Spec'
+                          
     }
     }
 
@@ -35,7 +46,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-htmlhint');
     grunt.loadNpmTasks('grunt-eslint');
+    grunt.loadNpmTasks('grunt-mocha');
     grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
+
+     grunt.registerTask('unitTest', ['mocha']);
 
 };
 
